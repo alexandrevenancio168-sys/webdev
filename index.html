@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landing page para os seus anúncios | WEBDEV</title>
+    <meta name="description" content="Criamos landing pages para transformar os seus anúncios do Facebook, Instagram e TikTok em oportunidades reais de negócio.">
+    <meta name="theme-color" content="#0b0014">
+    <!-- LINK FAVICON -->
+    <link rel="shortcut icon" href="img/logo_webdev.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style_1.css">
+    <link rel="stylesheet" href="slide.css">
+</head>
+
+<body>
+
+    <!-- ================= ÍCONES (sprite) ================= -->
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-instagram" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.2" cy="6.8" r="0.6"/>
+        </symbol>
+        <symbol id="i-facebook" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </symbol>
+        <symbol id="i-tiktok" viewBox="0 0 24 24">
+            <path d="M16 3v11a4 4 0 1 1-4-4"/>
+            <path d="M16 3a5 5 0 0 0 4 4.5"/>
+        </symbol>
+        <symbol id="i-whatsapp" viewBox="0 0 24 24">
+            <path d="M3 21l1.7-5A9 9 0 1 1 8 19.3L3 21z"/>
+            <path d="M9 9.5c.3 2.5 2.5 4.7 5.5 5.5l1.2-1.4-1.9-1-.9.7a4 4 0 0 1-1.8-1.8l.7-.9-1-1.9L9 9.5z"/>
+        </symbol>
+    </svg>
+
+
+    <!-- ================= VÍDEO DE FUNDO (fixo) ================= -->
+
+    <video
+        class="bg-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="imgs/poster.jpg"
+        aria-hidden="true">
+        <source src="https://www.pexels.com/download/video/32606402/" type="video/mp4">
+        
+        <!-- https://www.pexels.com/download/video/8111182/ -->
+    </video>
+
+    <div class="bg-overlay"></div>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header" id="topo">
+
+        <div class="header-inner">
+
+            <a href="#topo" class="brand" aria-label="Início">
+               WEBDEV
+            </a>
+
+            <button
+                class="burger"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="header-menu" id="menu">
+
+                <nav aria-label="Principal">
+                    <a href="#portfolio">Portfólio</a>
+                    <a href="#sobre">O que é</a>
+                    <a href="#planos">Planos</a>
+                    <a href="#contacto">Contacto</a>
+                    <a href="#duvidas">Dúvidas</a>
+                </nav>
+
+                <div class="socials">
+                    <a href="https://www.instagram.com/web_dev_criador_de_sites?rpxt=MWl5YnAzYjhkaXBxeA==" data-social="instagram" aria-label="Instagram" target="_blank">
+                        <svg class="icon"><use href="#i-instagram"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61580448279235" data-social="facebook" aria-label="Facebook" target="_blank">
+                        <svg class="icon"><use href="#i-facebook"/></svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@web_dev_criador_de_sites" data-social="tiktok" aria-label="TikTok" target="_blank">
+                        <svg class="icon"><use href="#i-tiktok"/></svg>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="container hero-inner">
+
+                <span class="eyebrow">Landing pages para anúncios</span>
+
+                <h1>Você tomou a <span>melhor decisão do dia!</span></h1>
+
+                <h2 class="hero-kicker">Ter uma <span>landing page</span></h2>
+
+                <p class="hero-lead">
+                    Transforme os seus anúncios em oportunidades reais de negócio.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-primary">Quero a minha landing page</a>
+                    <a href="#portfolio" class="btn btn-ghost">Ver portfólio</a>
+                </div>
+
+                <p class="hero-note">Reunião pelo WhatsApp 100% gratuita</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PORTFÓLIO ================= -->
+
+        <section class="section portfolio" id="portfolio">
+
+            <div class="container">
+
+                <div class="panel">
+
+                    <div class="section-head center">
+                        <span class="eyebrow">Portfólio</span>
+                        <h2>Exemplos reais de landing pages</h2>
+                        <p>Arraste ou use as setas para ver os trabalhos.</p>
+                    </div>
+
+                    <div class="carousel" aria-roledescription="carrossel" aria-label="Exemplos de landing pages">
+
+                        <div class="carousel-track">
+
+                            <!-- SLIDE 1 -->
+                            <div class="carousel-slide">
+                                <div class="slide-image" style="background-image:url('imgs/portfolio-1.png')"></div>
+                                <div class="slide-overlay"></div>
+                                <div class="slide-content">
+                                    <span class="slide-number">01</span>
+                                    <h3>Curso / Formação</h3>
+                                    <p>Exemplo real de landing page para anunciar um curso ou formação.</p>
+                                    <a class="slide-link" href="#portfolio">Ver exemplo</a>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 2 -->
+                            <div class="carousel-slide">
+                                <div class="slide-image" style="background-image:url('imgs/portfolio-2.png')"></div>
+                                <div class="slide-overlay"></div>
+                                <div class="slide-content">
+                                    <span class="slide-number">02</span>
+                                    <h3>Show</h3>
+                                    <p>Exemplo real de landing page para vender bilhetes de um show.</p>
+                                    <a class="slide-link" href="#portfolio">Ver exemplo</a>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 3 -->
+                            <div class="carousel-slide">
+                                <div class="slide-image" style="background-image:url('imgs/portfolio-3.png')"></div>
+                                <div class="slide-overlay"></div>
+                                <div class="slide-content">
+                                    <span class="slide-number">03</span>
+                                    <h3>Evento</h3>
+                                    <p>Exemplo real de landing page para divulgar e lotar um evento.</p>
+                                    <a class="slide-link" href="#portfolio">Ver exemplo</a>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 4 -->
+                            <div class="carousel-slide">
+                                <div class="slide-image" style="background-image:url('imgs/portfolio-4.png')"></div>
+                                <div class="slide-overlay"></div>
+                                <div class="slide-content">
+                                    <span class="slide-number">04</span>
+                                    <h3>Produto</h3>
+                                    <p>Exemplo real de landing page para apresentar e vender um produto.</p>
+                                    <a class="slide-link" href="#portfolio">Ver exemplo</a>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 5 -->
+                            <div class="carousel-slide">
+                                <div class="slide-image" style="background-image:url('imgs/portfolio-5.png')"></div>
+                                <div class="slide-overlay"></div>
+                                <div class="slide-content">
+                                    <span class="slide-number">05</span>
+                                    <h3>Serviço</h3>
+                                    <p>Exemplo real de landing page para apresentar um serviço.</p>
+                                    <a class="slide-link" href="#portfolio">Ver exemplo</a>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 6 -->
+                            <div class="carousel-slide">
+                                <div class="slide-image" style="background-image:url('imgs/portfolio-6.png')"></div>
+                                <div class="slide-overlay"></div>
+                                <div class="slide-content">
+                                    <span class="slide-number">06</span>
+                                    <h3>Lançamento</h3>
+                                    <p>Exemplo real de landing page para um lançamento de marca.</p>
+                                    <a class="slide-link" href="#portfolio">Ver exemplo</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-prev" type="button" aria-label="Exemplo anterior"></button>
+                        <button class="carousel-next" type="button" aria-label="Próximo exemplo"></button>
+
+                        <div class="carousel-pagination"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= O QUE É UMA LANDING PAGE ================= -->
+
+        <section class="section" id="sobre">
+
+            <div class="container">
+
+                <div class="panel">
+
+                    <div class="section-head">
+                        <span class="eyebrow">Esclareça as suas dúvidas</span>
+                        <h2>O que é uma landing page?</h2>
+                    </div>
+
+                    <p class="lead">
+                        É uma página web para onde vai toda a pessoa que vê o seu anúncio,
+                        pago ou gratuito, no Facebook, Instagram ou TikTok e clica no botão
+                        “Saber mais”. Ali, ela fica a perceber o que está a anunciar e tira
+                        todas as suas dúvidas.
+                    </p>
+
+                    <p class="lead">
+                        Depois, entra em contacto consigo para comprar. Você não precisa de
+                        enviar mensagem atrás de mensagem para a convencer, ela já foi
+                        esclarecida e convencida pela sua landing page.
+                    </p>
+
+                    <ol class="flow">
+                        <li><b>1</b> Anúncio nas redes sociais</li>
+                        <li><b>2</b> Clique em “Saber mais”</li>
+                        <li><b>3</b> A landing page esclarece</li>
+                        <li><b>4</b> O cliente contacta você</li>
+                    </ol>
+
+                    <h3 class="sub-title">Criamos para diferentes anúncios, como:</h3>
+
+                    <ul class="chips">
+                        <li>Curso / Formação</li>
+                        <li>Show</li>
+                        <li>Evento</li>
+                        <li>Produto</li>
+                        <li>E muito mais</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PLANOS ================= -->
+
+        <section class="section" id="planos">
+
+            <div class="container">
+
+                <div class="section-head center">
+                    <span class="eyebrow">Planos</span>
+                    <h2>Uma nova experiência para o seu anúncio</h2>
+                </div>
+
+                <div class="plans">
+
+                    <article class="plan">
+                        <span class="plan-tag">Essencial</span>
+                        <h3>Levinho</h3>
+                        <p class="plan-desc">
+                            Para quem pretende começar com uma landing page sem domínio personalizado.
+                        </p>
+                        <p class="price">50.000 <small>Kz</small></p>
+                        <ul>
+                            <li>1 mês de hospedagem incluído</li>
+                            <li>Sem domínio personalizado</li>
+                            <li>Prazo de entrega: 3 dias</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-ghost" data-plan="Levinho">Escolher Levinho</a>
+                    </article>
+
+                    <article class="plan featured">
+                        <span class="plan-tag">Recomendado</span>
+                        <h3>Pesado</h3>
+                        <p class="plan-desc">
+                            Para quem pretende apresentar a sua marca através de um domínio próprio.
+                        </p>
+                        <p class="price">80.000 <small>Kz</small></p>
+                        <ul>
+                            <li>2 meses de hospedagem incluídos</li>
+                            <li>Domínio próprio</li>
+                            <li>Prazo de entrega: 5 dias</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary" data-plan="Pesado">Escolher Pesado</a>
+                    </article>
+
+                    <article class="plan">
+                        <span class="plan-tag">Completo</span>
+                        <h3>Galaxy</h3>
+                        <p class="plan-desc">
+                            Para quem pretende uma landing page com domínio e hospedagem personalizados.
+                        </p>
+                        <p class="price">150.000 <small>Kz</small></p>
+                        <ul>
+                            <li>Domínio personalizado</li>
+                            <li>Hospedagem personalizada (custo à parte: 18 mil)</li>
+                            <li>Prazo de entrega: 7 dias</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-ghost" data-plan="Erro do programador">Escolher este plano</a>
+                    </article>
+
+                </div>
+
+                <p class="plans-note">Antes de iniciar o trabalho é pago 50% do investimento.</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section class="section" id="contacto">
+
+            <div class="container">
+
+                <div class="panel contact">
+
+                    <div class="contact-info">
+
+                        <span class="eyebrow">Como contratar o serviço?</span>
+
+                        <h2>Entrar em contacto</h2>
+
+                        <p>
+                            Preencha o formulário de contacto com os seus dados e escolha a
+                            modalidade de reunião. Depois, poderemos conversar sobre o seu
+                            projeto e os próximos passos.
+                        </p>
+
+                        <div class="meeting-cards">
+                            <div>
+                                <strong>Grátis</strong>
+                                <span>Reunião pelo WhatsApp</span>
+                            </div>
+                            <div>
+                                <strong>5.000 Kz</strong>
+                                <span>Reunião presencial</span>
+                            </div>
+                        </div>
+
+                        <p class="notice">Antes de iniciar o trabalho é pago 50% do investimento.</p>
+
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+
+                        <label class="field">
+                            <span>Nome completo</span>
+                            <input type="text" name="nome" required autocomplete="name" placeholder="O seu nome">
+                        </label>
+
+                        <label class="field">
+                            <span>O seu número de WhatsApp</span>
+                            <input type="tel" name="whatsapp" required inputmode="tel" autocomplete="tel" pattern="[0-9+ ]{9,16}" placeholder="9XX XXX XXX">
+                        </label>
+
+                        <label class="field">
+                            <span>Que tipo de negócio tem?</span>
+                            <input type="text" name="negocio" required placeholder="Ex.: formação, evento, loja...">
+                        </label>
+
+                        <label class="field">
+                            <span>Que plano lhe interessa?</span>
+                            <select name="plano" id="plano" required>
+                                <option value="" disabled selected>Escolha um plano</option>
+                                <option value="Levinho">Levinho — 50.000 Kz</option>
+                                <option value="Pesado">Pesado — 80.000 Kz</option>
+                                <option value="Erro do programador">Galaxy — 150.000 Kz</option>
+                                <option value="Ainda não sei">Ainda não sei</option>
+                            </select>
+                        </label>
+
+                        <fieldset>
+                            <legend>Como prefere reunir?</legend>
+                            <div class="radio-row">
+                                <label class="radio">
+                                    <input type="radio" name="reuniao" value="WhatsApp (grátis)" checked>
+                                    <span>WhatsApp <em>Grátis</em></span>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="reuniao" value="Presencial (5.000 Kz)">
+                                    <span>Presencial <em>5.000 Kz</em></span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <button type="submit" class="btn btn-primary btn-block">Enviar pelo WhatsApp</button>
+
+                        <p class="form-status" role="status" aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DÚVIDAS ================= -->
+
+        <section class="section" id="duvidas">
+
+            <div class="container">
+
+                <div class="panel narrow">
+
+                    <div class="section-head">
+                        <span class="eyebrow">Dúvidas</span>
+                        <h2>Esclareça as suas dúvidas</h2>
+                    </div>
+
+                    <details>
+                        <summary>O que é domínio?</summary>
+                        <p>
+                            É o endereço que as pessoas utilizam para encontrar o seu site
+                            (landing page) na internet. Exemplo: <strong>a-sua-marca.com</strong>
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>O que é hospedagem?</summary>
+                        <p>
+                            É o serviço que guarda os ficheiros da sua página e permite que
+                            ela seja acedida através da internet.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>O que é responsividade?</summary>
+                        <p>
+                            É quando a landing page se adapta e pode ser acedida em qualquer
+                            dispositivo, como telemóvel, computador, tablet e outros.
+                        </p>
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA FINAL ================= -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="panel cta-panel">
+
+                    <h2>Pronto para ter a sua landing page?</h2>
+
+                    <p>
+                        Fale connosco e esclareça tudo numa reunião gratuita pelo WhatsApp.
+                    </p>
+
+                    <a
+                        href="#contacto"
+                        class="btn btn-light"
+                        data-whatsapp
+                        data-message="Olá! Quero  uma landing page para o meu anúncio.">
+                        Falar no WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-inner">
+
+                <div>
+                    <a href="#topo" class="brand">
+                        WEBDEV
+                    </a>
+                    <p>Uma nova experiência para o seu anúncio.</p>
+                </div>
+
+                <div class="socials">
+                    <a href="https://www.instagram.com/web_dev_criador_de_sites?rpxt=MWl5YnAzYjhkaXBxeA==" data-social="instagram" aria-label="Instagram" target="_blank">
+                        <svg class="icon"><use href="#i-instagram"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61580448279235" data-social="facebook" aria-label="Facebook" target="_blank">
+                        <svg class="icon"><use href="#i-facebook"/></svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@web_dev_criador_de_sites" data-social="tiktok" aria-label="TikTok" target="_blank">
+                        <svg class="icon"><use href="#i-tiktok"/></svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <p class="footer-bottom">© 2026 WEBDEV. Todos os direitos reservados.</p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
+
+    <a
+        class="wa-float"
+        href="#contacto"
+        data-whatsapp
+        data-message="Olá! preciso de uma landing page."
+        aria-label="Falar no WhatsApp">
+        <svg class="icon"><use href="#i-whatsapp"/></svg>
+    </a>
+
+
+    <!-- JS -->
+    <script src="script0.js"></script>
+
+</body>
+</html>
